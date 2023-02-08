@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 /* Utilities */
-:root{
-    
-}
 
 .d-flex{
     display: flex;
@@ -33,8 +30,11 @@
     flex-direction: column;
 }
 
+
+/* upgradebar */
+
 .upgradebar{
-    height: 100px;
+    height: 10%;
     width: 100%;
     background-color: grey;
 }
@@ -42,4 +42,35 @@
 /* upgradebar */
 
 
-/* upgradebar */
+
+/* Playlist box */
+
+
+.playlists-box{
+    height: 90%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.navbar{
+    padding: 1.5rem;
+}
+
+.playlist-recently-played{
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-style: dotted;  /* debug feature */
+    border-color: azure;  /* debug feature */
+}
+
+.album {
+    margin: 1.5rem;
+    height: 250px;
+    width: calc(50%);
+    border-style: dotted;  /* debug feature */
+    border-color: azure;  /* debug feature */
+}
+
+
+/* Playlist box */
