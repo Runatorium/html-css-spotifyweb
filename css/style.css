@@ -79,7 +79,7 @@
 .playlist-recently-played{
     width: 100%;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     border-style: dotted;  /* debug feature */
     border-color: azure;  /* debug feature */
 }
@@ -87,7 +87,7 @@
 .album {
     margin: 1.5rem;
     height: 250px;
-    width: calc(50%);
+    width: calc(50% - 3rem);
     border-style: dotted;  /* debug feature */
     border-color: azure;  /* debug feature */
 }
@@ -105,17 +105,33 @@ footer.footer.d-flex {
 /* Tablet Responsivity*/
 
 @media screen and (min-width:576px){
+    .sidebar{
+        width: 250px;
+    }
 
     .navbar{
-        margin-top: 15%;
+        margin-top: 22%;
     }
 }
 
 
 
-@media screen and (min-width:900px){
+@media screen and (min-width:992px){
 
     .navbar{
-        margin-top: 7%;
+        margin-top: 10%;
     }
+
+    .album{
+        width: calc(25% - 3rem);
+    }
+}
+
+
+@media screen and (min-width:1200px){
+
+    .album{
+        width: calc(100% / 6 - 3rem);
+    }
+
 }
