@@ -5,31 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Spotify</title>
   </head>
   <body>
     <main class="whole-body d-flex">
       <!--- Sidebar--->
       <section class="sidebar d-flex">
-        <div class="sidebar-bodylogo"></div>
+        <div class="sidebar-bodylogo d-flex">
+          <img src="./img/logo.svg" alt="" />
+        </div>
         <div class="sidebar-utilities">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+          <ul classO="d-flex">
+            <li><i class="fa-solid fa-house"></i><span>Home</span></li>
+            <li>
+              <i class="fa-solid fa-magnifying-glass"></i> <span>Cerca</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-bars"></i><span>La tua Libreria</span>
+            </li>
           </ul>
         </div>
         <div class="sidebar-playlists">
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li id="playlist-titolo"><strong>PLAYLIST</strong></li>
+            <li>
+              <i class="fa-solid fa-square-plus"></i><span>Crea Playlist</span>
+            </li>
+            <li>Nome playlist</li>
+            <li>Nome playlist</li>
+            <li>Nome playlist</li>
+            <li>Nome playlist</li>
+            <li>Nome playlist</li>
+            <li>Nome playlist</li>
+            <li>Nome playlist</li>
+            <li>Nome playlist</li>
+            <li>Nome playlist</li>
           </ul>
         </div>
-        <div class="sidebar-footer"></div>
+        <div class="sidebar-footer">
+          <ul>
+            <li>
+              <i class="fa-solid fa-circle-arrow-down"></i
+              ><span>Installa app</span>
+            </li>
+            <hr />
+            <li>
+              <i class="fa-solid fa-circle-user"></i> <span>John Doe</span>
+            </li>
+          </ul>
+        </div>
       </section>
       <!--- Sidebar--->
 
