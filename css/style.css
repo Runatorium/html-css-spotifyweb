@@ -247,6 +247,14 @@ footer.footer.d-flex {
     object-fit: contain;
 }
 
+.icons{
+    margin-left: 25px;
+}
+
+.icons i{
+    padding: 5px;
+}
+
 /* Tablet Responsivity*/
 
 @media screen and (min-width:576px){
