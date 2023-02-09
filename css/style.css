@@ -272,11 +272,34 @@ footer.footer.d-flex {
     flex-direction: row;
 }
 
+.footerboxleft{
+    width: 200px;
+    height: 50%;
+    font-size: 16px;
+    color: white;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footerboxleft i {
+    margin: 5px;
+}
+
 .active-buttonsbox span{
     font-size: 12px;
 }
 #song-duration-bar{
     width: 90%;
+    height: 5px;
+    background-color: rgb(109, 108, 108);
+    border-radius: 5px;
+    border-style: none;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#song-duration-barleft{
+    width: 70%;
     height: 5px;
     background-color: rgb(109, 108, 108);
     border-radius: 5px;
