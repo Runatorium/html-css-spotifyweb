@@ -174,17 +174,26 @@
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    border-style: dotted;  /* debug feature */
-    border-color: azure;  /* debug feature */
+}
+.playlist-madefor{
+    margin-left: 10px;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
+h2{
+    margin-top: 25px;
+}
 .album {
     padding: 10px;
-    margin: 1.5rem;
+    margin: 1.5rem 0rem;
     height: 250px;
     width: calc(50% - 3rem);
 }
-
+.roundimg{
+    border-radius: 50%;
+}
 .album img{
     
     width: 100%;
@@ -200,6 +209,11 @@
 .album strong{
     font-size: 16px;
     color: white;
+}
+
+#suggestiontxt{
+    color: grey;
+    margin-left: 10px;
 }
 
 /* Playlist box */
