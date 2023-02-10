@@ -24,11 +24,15 @@
     width: 40px; /* debug feature */
 }
 
-.sidebar-footer{
+.sidebar-footer {
+    display: flex;
+    flex: 1;
     align-self: flex-end;
     width: 100%;
-    height: 100px;
+    justify-content: flex-end;
+    flex-direction: column;
 }
+
 .sidebar-utilities{
     width: 100%;
     height: 100px;
@@ -109,17 +113,21 @@
     position: fixed;
     height: 100px;
     width: 100vw;
+    justify-content: right;
     background-color: rgb(23, 30, 46); ;
     opacity: 0.5;
+    align-items: center;
 }
 
 #upgradebutton{
-    padding: 10px;
+    height: 50px;
+    width: 200px;
     border-style: groove;
     border-radius: 10px;
     border-color: white;
     color: white;
     background-color: transparent;
+    margin-right: 300px;
 }
 
 /* upgradebar */
@@ -202,20 +210,30 @@ h2{
     margin-top: 25px;
 }
 .album {
-    padding: 10px;
+    position: relative;
+    padding:10px;
     margin: 1.5rem 0rem;
     height: 250px;
     width: calc(50% - 3rem);
 }
-.roundimg{
+.album .roundimg{
     border-radius: 50%;
 }
 .album img{
     display: block;
-    width: 100%;
+    width: 100% ;
     height: 100%;
     object-fit: contain;
 }
+
+
+
+.prova{
+    position: absolute;
+    margin-top: 50%;
+    margin-left: 50%;
+}
+
 
 .album p{
     text-align: center;
@@ -383,8 +401,11 @@ i:hover{
 
 /* Tablet Responsivity*/
 
-@media screen and (min-width:576px){
+@media screen and (min-width:577px){
 
+    .sidebar-footer{
+        flex: 0;
+    }
     .sidebar{
         width: 250px;
     }
@@ -392,6 +413,11 @@ i:hover{
 }
 
 @media screen and (max-width:576px){
+
+    #upgradebutton{
+        margin-right: 25%;
+    }
+
     .sidebar-utilities span{
         display: none;
     }
@@ -420,6 +446,10 @@ i:hover{
     .sidebar-footer hr{
         display: none;
     }
+
+    .sidebar .fa-circle-user:before{
+        font-size: 18px;
+    }
 }
 
 @media screen and (min-width:992px){
@@ -429,7 +459,6 @@ i:hover{
     #song-duration-barleft{
         display: inline;
     }
-   
 }
 
 
@@ -445,7 +474,12 @@ i:hover{
     }
     
 }
+@media screen and (max-width:1200px){
 
+    #upgradebutton{
+        margin-right: 25%;
+    }
+}
 
 @media screen and (min-height: 576){
     .sidebar-playlists{
