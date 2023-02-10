@@ -161,10 +161,20 @@
     padding: 10px;
 }
 
-.navbar:hover li{
-    border-bottom: 10px;
-    border-color: green;
+.navbar li:hover {
+    border-bottom: 3px solid;
+    border-color: rgb(6, 71, 16);
+    border-width: 50%;
+    color: white;
 }
+
+li:hover{
+    color: white;
+}
+.sidebar i:hover{
+    color: white;
+}
+
 
 .mainbody{
     Overflow-y: scroll;
@@ -236,7 +246,7 @@ footer.footer.d-flex {
     justify-content: space-between;
 }
 .footerbox {
-    width: 200px;
+    width: 225px;
     height: 100%;
     align-items: center;
     flex-direction: row;
@@ -259,6 +269,7 @@ footer.footer.d-flex {
 
 .icons{
     margin-left: 25px;
+    width: 80px;
 }
 
 .icons i{
@@ -283,7 +294,7 @@ footer.footer.d-flex {
 }
 
 .footerboxleft{
-    width: 200px;
+    width: 225px;
     height: 100%;
     font-size: 16px;
     color: white;
@@ -359,6 +370,14 @@ footer.footer.d-flex {
 
 
 /* FOOTER progbar*/
+
+i:hover{
+    font-size: 115%;
+}
+
+.footerbox p:hover {
+    text-decoration: underline;
+}
 
 
 
