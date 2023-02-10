@@ -363,7 +363,9 @@ footer.footer.d-flex {
     height: 5px;
     background-color: grey;
 }
-
+.wholebar.right {
+    margin-right: 20px;
+}
 .progbar{
     width: 15%;
     height: 5px;
